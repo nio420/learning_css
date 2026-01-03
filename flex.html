@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  :root {
+  --primary: #fdcb6e;
+  --sec: #dfe6e9;
+  --darkColor: #00b894;
+  --whiteColor: #fff;
+  --bgcolor: #ccc;
+  --defaultWidth: 80%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--sec);
+}
+.main_area {
+  width: var(--defaultWidth);
+  margin: 20px auto;
+  background: var(--bgcolor);
+}
+.main_area h2 {
+  text-align: center;
+  background: var(--primary);
+  padding: 20px;
+  color: var(--darkColor);
+}
+.parent{
+  display: flex;
+  /* flex-direction: reverse / row-reverse;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.child {
+  background: var(--darkColor);
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: var(--whiteColor);
+  margin: 1%;
+  flex-basis: 30%;
+}
+.child a {
+  background: var(--primary);
+  color: var(--darkColor);
+  display: inline-block;
+  transition: 0.5s;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.child a:hover {
+  background: var(--sec);
+  color: var(--primary);
+}
+.extra{
+  background: var(--primary);
+  height: 300px;
+  margin-bottom: 25px;
+  display: flex;
+  margin-left: 2%;
+  /* align-items: baseline; */
+  align-items: center;
+  justify-content: center;
+}
+.extra .child{
+  width: 550px;
+  height: 100px;
+}
+.position{
+  background: #00b894;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.item{
+  background: tomato;
+  flex-basis: 70px;
+  height: 70px;
+  text-align: center;
+  margin-right: 1%;
+  padding-top: 10px;
+}
+.item:nth-child(2){
+  order: 4;
+}
+.item:nth-child(3){
+  order: 2;
+  flex-grow: 4;
+}
+
+/* for image using flex */
+img{
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.image_parent{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.image_child{
+  flex-basis: 30%;
+}
+</style>
+<body>
+  <div class="main_area">
+    <h2>Hello!</h2>
+    <div class="extra">
+      <div class="child">
+        <h3>2</h3>
+      </div>
+      <!-- <div class="child">
+        <h3>2</h3>
+      </div>
+      <div class="child">
+        <h3>2</h3>
+      </div>
+      <div class="child">
+        <h3>2</h3>
+      </div>
+      <div class="child">
+        <h3>2</h3>
+      </div>
+      <div class="child">
+        <h3>2</h3>
+      </div> -->
+    </div>
+    <div class="parent"> 
+    <div class="child">
+      <h3>1 I am Ali Hossain</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+        sunt magnam ad totam distinctio?</p>
+      <a href="">Read More</a>
+    </div>
+    <div class="child">
+      <h3>I am Ali Hossain</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+        sunt magnam ad totam distinctio?</p>
+      <a href="">Read More</a>
+    </div>
+    <div class="child">
+      <h3>I am Ali Hossain</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+        sunt magnam ad totam distinctio?</p>
+      <a href="">Read More</a>
+    </div>
+    <div class="child">
+      <h3>I am Ali Hossain</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+        sunt magnam ad totam distinctio?</p>
+      <a href="">Read More</a>
+    </div>
+  </div>
+  </div><br><br><hr>
+    
+
+  <div class="position">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+/* serif font
+font-family: 'Times New Roman' ;
+font-family: georgia ; */
+
+/* sans-serif
+font-family: 'Arial' sans-serif ;
+font-family: verdana ; *
+/
+/* monosapce
+font-family: 'Courier New'; */
+
+/* fantacy
+font-family: 'papyrus'; */
+
+/* cusive
+font-family: 'Brush Script MT'; */
+
+body{
+  background-image: url(br.jpg) ;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+#stk{
+  text-align: center;
+  background: lightblue;
+  display: block;
+}
+div{
+  background-color: rgba(240, 128, 128, 0.4);
+  background-image: url(br.jpg);
+  background-size: 100px 80px;
+  margin: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: top Center;
+  margin-bottom: 10px auto; 
+  padding: 10px 10px;
+  color: aqua;
+
+}
+div{
+  width: 26%;
+  margin: 1%;
+  padding: 2%;
+  border:  solid black;
+  float: left;
+}
+#one{
+  text-align-last: right;
+  text-decoration-line: overline;
+  color: #000000;
+  text-indent: 15%;
+  line-height: 25px;
+  font-size: 13px;
+}
+h2{
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  vertical-align: middle;
+  font: bolder;
+  letter-spacing: 10px;
+  vertical-align: super;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+  text-decoration: underline overline;
+  text-transform: uppercase;
+}
+#sp{
+ white-space: break-space ;
+ word-spacing: 10px;
+ text-shadow: 5px 5px 4px rgb(48, 214, 33);
+ letter-spacing: 10px;
+
+}
+#font{
+  font-family: serif;  
+  font-family: sans-serif;
+  font-family: monospace;
+  font-family: cursive ;
+  
+  font-style: normal;
+  font-size: 50px;
+  font-weight:500 ;
+  font-variant: small-caps;
+}
+.btn{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 25px;
+  background: red;
+  color: #fff;
+  border-radius: 30px;
+  padding: 15px 10px;
+}
+.btn:hover{
+  background: rgba(255, 0, 0, 0.2);
+  color: #000000;
+}
+.btn:active{
+  color: #5f9ea0b4;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn:focus{
+  color: violet;
+}
+ul{
+  list-style-type: none;
+  list-style-position: inside;
+  background: tomato;
+  padding: 20px;
+}
+li{
+  background: burlywood;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  
+}
+ul li a{
+  text-decoration: none;
+  color: #000000;
+  text-transform: none;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+table{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+caption{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 30px;
+  background: #636e72;
+  margin-bottom: 10px;
+}
+th{
+  height: 40px;
+  color: #000000;
+  background: #a29bfe;
+}
+tr:hover th, tr:hover td{
+  background: tomato;
+}
+td{
+  color: whitesmoke;
+  vertical-align: baseline;
+  background: #74b9ff;
+}
+.table{
+  width: 400px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.float{
+  background: pink;
+  color: #74b9ff;
+  padding: 20px 5px;
+  width: 90%;
+}
+ img{
+  float: none;
+  /* margin-bottom: 10px; - only for not center using
+  margin-left: 10px;   - same thing  */ 
+  margin: 0 auto 15px;
+  display: block;
+}
+form{
+  margin: 20px auto;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+input[type='text']{
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #000000;
+ 
+}
+input[type='button']{
+  background: coral;
+  padding: 10px 12px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid coral;
+  border-radius: 5px;
+  display: none;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+input:not(:placeholder-shown) + input[type='button']{
+  display: block;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .main{
+    background: wheat;
+  }
+  /* grid function learning */
+  .main{
+    width: 32%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 400px / 1fr 2fr;
+    grid-auto-rows: minmax(30px, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+    gap: 50px;
+    justify-content: space-around;
+    align-content: end;
+    grid-template-areas: 'header header header''footer footer';
+  }
+  .child:nth-child(1){
+    grid-area: header;
+  }
+  .child:nth-child(5){
+    grid-area: footer;
+  }
+  .child:nth-child(2){
+    grid-column-end: 2;
+    grid-column-end: 4;
+    grid-column: 2/4s
+    ;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 2/4;
+  }
+  .child{
+    background: tomato;
+    border-bottom: 1%;
+    padding: 10px;
+    margin: 1%;
+   width: 100%;
+  
+  }
+  .child a{
+    background: gray;
+    padding: 10px 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+</style>
+<body>
+  <div class="main">
+    <div class="parent"> 
+      <div class="child">
+        <h3>1 I am Ali Hossain</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+          sunt magnam ad totam distinctio?</p>
+        <a href="">Read More</a>
+      </div>
+      <div class="child">
+        <h3>I am Ali Hossain</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+          sunt magnam ad totam distinctio?</p>
+        <a href="">Read More</a>
+      </div>
+      <div class="child">
+        <h3>I am Ali Hossain</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+          sunt magnam ad totam distinctio?</p>
+        <a href="">Read More</a>
+      </div>
+      <div class="child">
+        <h3>I am Ali Hossain</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus. Quis laboriosam quas quae optio
+          sunt magnam ad totam distinctio?</p>
+        <a href="">Read More</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

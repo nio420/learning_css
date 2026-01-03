@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* img{
+    max-width: 90%;
+    opacity: 1;   
+  }
+ img:hover{
+  opacity: 0.6;
+ } */
+ .child{
+  text-align: center;
+  width: 700px;
+  color: black;
+  margin: 25px auto;
+  position: relative;
+  overflow: hidden;
+ }
+ .child img{
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+ }
+ .child:hover img{
+  transform: scale(1.2);
+ }
+ .inner{
+  padding: 10% 5%;
+  /* display: none; */
+  position: absolute;
+  height: 73%;
+  width: 90%;
+  top: -700px;
+  left: 0;
+  z-index: 9;
+  transition: 0.5s;
+ }
+ .inner::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #718093;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  content: '';
+  z-index: -1;
+ }
+ p{
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #dcdde1;
+  font-size: 35px;
+  margin-bottom: 0;
+  font-weight: bold;
+ }
+ a{
+  margin-top: 15px;
+  color: #f5f6fa;
+  padding: 15px 17px;
+  font-size: 18px;
+  background: #8c7ae6;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+ }
+ a:hover{
+  transform: scale(1.2);
+  background: #f78fb3;
+  color: #303952;
+ }
+ .child:hover .inner{
+  /* display: block; */
+  top: 0;
+ }
+</style>
+
+<body>
+  <div class="child">
+    <img src="ho.jpeg" alt="">
+    <div class="inner">
+      <h2>This is me</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum esse illum saepe dolor labore ducimus.</p>
+      <a href="https://medium.com/@noureldin_z3r0/how-to-write-the-perfect-blog-post-my-10-000-word-journey-7b5b38525848" target="_blank">Learn more</a>
+    </div>
+  </div>
+
+</body>
+</html>
